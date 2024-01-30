@@ -1,0 +1,646 @@
+/* **Código para centrar el logo en la barra de navegación** */
+.navbar-brand {
+    position: absolute;  /* Posición absoluta para controlar la ubicación */
+    left: 50%;  /* Mover hacia la mitad del contenedor principal */
+    transform: translateX(-50%);  /* Ajustar hacia la izquierda para centrar */
+}
+
+/* **Estilo personalizado para ajustar la altura del carrusel** */
+.carousel-inner img {
+    max-height: 50vh;  /* Máxima altura del 50% de la ventana para imágenes del carrusel */
+    object-fit: cover;  /* Ajusta la imagen para cubrir el área especificada */
+}
+
+/* **Estilo personalizado para botones de navegación del carrusel** */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.276);  /* Fondo semitransparente para los botones */
+}
+
+/* **Estilo para ocultar la barra de desplazamiento horizontal** */
+html, body {
+    overflow-x: hidden;  /* Ocultar la barra de desplazamiento horizontal en la página */
+}
+
+.headerclass {
+    background-color: #444343;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0; /* Añade esto para eliminar cualquier espacio inferior */
+    margin-bottom: 0; /* Añade esto para eliminar cualquier espacio inferior */
+}
+
+
+/* También puedes agregar la fuente a elementos específicos si lo prefieres */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Archivo Black', "Helvetica Neue", sans-serif;
+}
+
+p, a, button, input, textarea{
+    font-family: "Helvetica Neue",sans-serif, "Helvetica Neue",sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.container.headerclass {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0px, 100%;
+}
+
+.imagencongratulation{
+
+    width: 100%;
+    height: 50%;
+    padding-top: 0;
+    margin-top: 50px;
+    padding-bottom: 0; /* Añade esto para eliminar cualquier espacio inferior */
+    margin-bottom: 0; /* Añade esto para eliminar cualquier espacio inferior */
+}
+
+
+
+
+.navbar-nav.ml-auto .nav-link {
+    color: white;
+}
+
+.navbar-nav.ml-auto.menu .nav-link {
+    color: white;
+}
+/* **Estilo para el logo en la página** */
+
+/* **Estilo para el contenedor del carrusel** */
+.container-carrusel {
+    position: relative;  /* Posición relativa para posicionar elementos hijos */
+    width: 100%;  /* Ancho del contenedor al 100% del contenedor principal */
+    height: 100%;  /* Altura del contenedor al 100% del contenedor principal */
+    background-color: black;  /* Color de fondo negro */
+    margin: 0 auto;  /* Márgenes automáticos a la izquierda y derecha */
+    overflow-x: hidden;  /* Ocultar la barra de desplazamiento horizontal en el contenedor */
+}
+
+/* **Estilo para los botones de navegación del carrusel** */
+.slider input {
+    visibility: hidden;  /* Hacer invisible el input de radio */
+    display: none;  /* No mostrar el input de radio */
+}
+
+.buttons {
+    position: absolute;  /* Posición absoluta para controlar la ubicación */
+    width: 100%;  /* Ancho al 100% del contenedor principal */
+    display: flex;  /* Mostrar como un contenedor flexible */
+    justify-content: center;  /* Centrar los elementos horizontalmente */
+    bottom: 10px;  /* Alineación desde la parte inferior del contenedor */
+    gap: 10px; 
+    border: 10px solid rgb(0, 0, 0); /* Espacio entre los elementos hijos */
+}
+
+.buttons label {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0); 
+    
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+
+
+.buttons2 {
+    position: absolute;  /* Posición absoluta para controlar la ubicación */
+    width: 100%;  /* Ancho al 100% del contenedor principal */
+    display: flex;  /* Mostrar como un contenedor flexible */
+    justify-content: center;  /* Centrar los elementos horizontalmente */
+    bottom: 45%;  /* Alineación desde la parte inferior del contenedor */
+    gap: 95%; 
+    border: 10px solid rgb(0, 0, 0); /* Espacio entre los elementos hijos */
+}
+
+
+
+.buttons2 label {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);  /* Ajusta el grosor y color del borde según tus preferencias */
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+
+
+@media screen and (max-width: 765px) {
+    .buttons2 {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 45%;
+        gap: 85%;
+        border: 10px solid rgb(0, 0, 0);
+    }
+    .buttons2 label {
+        width: 40px;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(0, 0, 0);  /* Ajusta el grosor y color del borde según tus preferencias */
+        cursor: pointer;
+        z-index: 1;
+        transition: 300ms ease-in-out;
+    }
+}
+
+
+.menu{
+    margin: 0 30px;
+    text-align: center;
+}
+
+.navbar.logo{
+    width: 70%; 
+    display: block; 
+    margin: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .menu{
+        margin: 0 3px;
+        text-align: right;
+        margin: 0px 0px 0px 100px;
+    }
+    .navbar.logo{
+        width: 10%; 
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+
+}
+
+
+
+.logo-img{
+    width: 28%; 
+    display: block; 
+    margin: 10px auto;
+}
+.redes-sociales p{
+    gap: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.redes-content {
+    display: flex;
+    align-items: center;
+}
+
+.redes-content i {
+    margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto según sea necesario */
+}
+
+.redes-sociales{
+    margin: 0px 35px;
+}
+@media screen and (max-width: 1400px) {
+    .logo-img{
+        width: 20%; 
+        display: block; 
+        margin: 0px auto;
+    }
+    .menu{
+        margin: 0 3px;
+        text-align: right;
+        margin: 0px 0px 0px 0px;
+    }
+    .redes-sociales{
+        margin: 0px;
+    }
+    .cajalogo{
+        width: 40%; 
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .logo-img{
+        width: 50%; 
+        height: 20%;
+        display: block; 
+        margin: 0px auto;
+    }
+    .menu{
+        margin: 0 3px;
+        text-align: left;
+        margin: 0px auto;
+    }
+    .redes-sociales{
+        margin: 0px auto;
+        text-align: center;
+    }
+    .cajalogo{
+        width: 20%; 
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        margin: 0 50px;
+        
+    }
+}
+@media screen and (max-width: 769px) {
+    .logo-img{
+        width: 80%; 
+        height: 20%;
+        display: block; 
+        margin: 0px auto;
+    }
+    .menu{
+        margin: 0 3px;
+        text-align: left;
+        margin: 0px auto;
+    }
+    .redes-sociales{
+
+        margin: 0px auto;
+        text-align: center;
+    }
+    .cajalogo{
+        width: 20%; 
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        margin: 0 50px;
+        
+    }
+}
+@media screen and (max-width: 582px) {
+    .logo-img{
+        width: 75%; 
+        height: 20%;
+        display: block; 
+        margin: 0px auto;
+    }
+    .menu{
+        margin: 0 3px;
+        text-align: left;
+        margin: 0px auto;
+    }
+    .redes-sociales{
+
+        margin: 0px auto;
+        text-align: center;
+    }
+    .cajalogo{
+        width: 20%; 
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        margin: 0 50px;
+        
+    }
+}
+@media screen and (max-width: 358px) {
+    .logo-img{
+        width: 100%; 
+        height: 20%;
+        display: block; 
+        margin: 0px auto;
+    }
+    .menu{
+        margin: 0 3px;
+        text-align: left;
+        
+    }
+    .redes-sociales{
+        
+        margin: 0px auto;
+        text-align: center;
+
+    }
+    .cajalogo{
+        width: 20%; 
+        display: block; 
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+    .redes-sociales p{
+        gap: 10px;
+        margin: 0px 0px 0px 0px;
+        display: none;
+    }
+    .redes-content i {
+        margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto según sea necesario */
+    }
+
+}
+
+
+
+
+.buttons label:hover {
+    scale: 1.2;  /* Escalado en caso de hover para destacar */
+    opacity: 1;  /* Opacidad completa en caso de hover */
+}
+.buttons2 label:hover {
+    scale: 1.2;  /* Escalado en caso de hover para destacar */
+    opacity: 1;  /* Opacidad completa en caso de hover */
+}
+
+
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3) {
+    opacity: 1;  /* Opacidad completa cuando el botón está seleccionado */
+    scroll-margin: 1.2;  /* Márgenes de desplazamiento específicos para el botón seleccionado */
+    width: 40px;  /* Ancho específico para el botón seleccionado */
+}
+
+
+/* **Estilo para el contenido del carrusel** */
+.content {
+    position: relative;  /* Posición relativa para posicionar elementos hijos */
+    width: 300vw;  /* Ancho del contenido del carrusel en 300% de la ventana */
+    display: flex;  /* Mostrar como un contenedor flexible */
+    transition: 400ms ease-in-out;  /* Efecto de transición suave */
+}
+
+/* **Estilo para los slides individuales del carrusel** */
+.fistslide,
+.secondslide,
+.thirdslide {
+    position: relative;  /* Posición relativa para posicionar elementos hijos */
+    width: 100vw;  /* Ancho del slide al 100% de la ventana */
+    height: 50vh;  /* Altura del slide al 50% de la ventana */
+    display: flex;  /* Mostrar como un contenedor flexible */
+    justify-content: center;  /* Centrar los elementos horizontalmente */
+}
+.fistslide img,
+.secondslide img,
+.thirdslide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen manteniendo su proporción y cubriendo completamente el contenedor */
+}
+.fistslide {
+    background-color: green;  /* Color de fondo verde para el primer slide */
+}
+
+.secondslide {
+    background-color: brown;  /* Color de fondo marrón para el segundo slide */
+}
+
+.thirdslide {
+    background-color: blue;  /* Color de fondo azul para el tercer slide */
+}
+
+/* **Estilo para la posición del contenido del carrusel cuando se selecciona cada slide** */
+.slider input:nth-child(1):checked ~ .content {
+    left: 0;  /* Alineación a la izquierda cuando se selecciona el primer slide */
+}
+
+.slider input:nth-child(2):checked ~ .content {
+    left: -100vw;  /* Alineación hacia la izquierda equivalentes al ancho de la ventana cuando se selecciona el segundo slide */
+}
+
+.slider input:nth-child(3):checked ~ .content {
+    left: -200vw;  /* Alineación hacia la izquierda equivalentes a dos veces el ancho de la ventana cuando se selecciona el tercer slide */
+}
+
+
+
+.container-mt-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container-mt-5 img {
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.container-mt-5 p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+.categoria-1, .categoria-2, .categoria-3 {
+
+    width: 100%;
+}
+
+/* Agrega una clase específica a las imágenes que deseas escalar */
+.categoria-1:hover, .categoria-2:hover, .categoria-3:hover {
+    transform: scale(1.2); /* Escala la imagen al 120% del tamaño original cuando se realiza el hover */
+    transition: transform 0.3s ease; /* Agrega una transición suave para una animación más agradable */
+}
+  
+  /* Puedes ajustar el valor de scale según tus preferencias */
+
+  
+.card-title a {
+    text-decoration: none; /* Quitar subrayado */
+    color: black; /* Cambiar el color del texto a negro */
+}
+
+.noticia-1:hover a {
+    text-decoration: none; /* Quitar subrayado */
+    color: rgb(255, 0, 38); /* Cambiar el color del texto a negro */
+}
+
+.card-img-top .categorias {
+    width: 70%;
+    height: auto;
+
+}
+
+.card-body .noticia-1{
+
+    margin-bottom: 50px;
+
+}
+
+.nav-link:hover, .Redes{
+
+    color: rgb(233, 60, 60);
+}
+
+
+.brand-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+}
+  
+
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #32476c;
+
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.category_list .ct_item-active{
+	background: #2b769f;
+}
+
+/* PRODUCTOS ============*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 6px 0px rgba(33, 93, 153, 0.22);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+.products-list .product-item img{
+	width: 100%;
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #3c3c3c;
+
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+  /* Agrega más estilos según tus necesidades */
+  
